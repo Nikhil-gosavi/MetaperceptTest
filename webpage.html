@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div class="abc" id="navb">
+            <div class="navbar-nav">
+                <a href="#">HOme</a>
+                <a href="#">About</a>
+                <a href="#">Blog</a>
+
+                <button name="button" type="button">Button</button>
+                
+
+        </div>
+        <title><h1>Title</h1></title>
+       
+        </p>
+        <button name="button" type="button">Button</button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus possimus dolorem labore aut 
+            laudantium corporis, aliquid alias tenetur ab expedita totam maiores quos consequuntur ullam facere 
+            voluptate eum tempora quaerat.</p>
+
+
+        <script> $(document).ready (function() 
+            {
+                  $.getJSON("class.json",function(data)
+            {
+                    const el=document.getElementById("divId1");
+                    el.innerHTML = JSON.stringify(data[0]);
+
+                    
+                    const el1=document.getElementById("divId1");
+                    el1.innerHTML = JSON.stringify(data[1]);
+
+                    
+                    const el2=document.getElementById("divId1");
+                    el2.innerHTML = JSON.stringify(data[2]);
+
+                   
+                    const el3=document.getElementById(" divId1");
+                    el2.innerHTML = JSON.stringify(data[2]);
+
+            }
+            
+            
+
+            )});
+            </script>
+        </body>
+</html>
